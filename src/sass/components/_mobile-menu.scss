@@ -1,0 +1,64 @@
+.mobile-menu__container {
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 130px;
+  height: 255px;
+  background-color: $background-white;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+  border-radius: 30px 0px 30px 30px;
+  z-index: 2;
+  pointer-events: none;
+  &.is-open {
+    opacity: 1;
+    pointer-events: all;
+  }
+  @extend %transition;
+}
+
+.mobile-menu__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $nav-text;
+ 
+}
+
+.mobile-menu__item {
+  padding: 14px;
+
+  transition: background-color 250ms linear;
+  
+    &:first-child {
+      border-radius: 30px 0px 0px 0px;
+    }
+  
+    &:last-child {
+      border-radius: 0px 0px 30px 30px;
+    }
+
+  &:active {
+    background-color: $primary-accent-color;
+  }
+
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-close-btn {
+  border: none;
+  background: transparent;
+
+  position: absolute;
+  top: 0px;
+  right: -6px;
+}

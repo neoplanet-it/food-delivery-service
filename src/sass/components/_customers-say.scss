@@ -1,0 +1,162 @@
+.customer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include nokia {
+    background-image: url('../images/customers-say/img1-mob-1x.png');
+    background-size: 100% 100%;
+   
+    @include retina {
+      background-image: url('../images/customers-say/img1-mob-2x.png');
+    }
+  }
+
+  @include mobile {
+    background-image: url('../images/customers-say/img1-mob-1x.png');
+    background-size: 100% 100%;
+    @include retina {
+      background-image: url('../images/customers-say/img1-mob-2x.png');
+    }
+  }
+
+  @include tablet {
+    padding-bottom: 120px;
+    background-image: url('../images/customers-say/img1-tab-1x.png');
+    background-size: 100% 100%;
+
+    @include retina {
+      background-image: url('../images/customers-say/img1-tab-2x.png');
+    }
+  }
+
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-image: url('../images/customers-say/img1-desk-1x.png');
+    background-size: 100% 100%;
+
+    @include retina {
+      background-image: url('../images/customers-say/img2-desk-2x.png');
+    }
+  }
+}
+
+.customer-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 42px;
+  }
+}
+
+.customer-description {
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.17;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.feedback-container {
+  @extend .list;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  @include desktop {
+    gap: 0;
+  }
+}
+
+.feedback {
+  background-color: $background-white;
+  border-radius: 0px 30px 30px 30px;
+
+  @include nokia {
+    padding: 8px;
+  }
+
+  @include mobile {
+    padding: 12px;
+  }
+
+  @include tablet {
+    margin-right: 0px;
+    padding: 12px;
+  }
+
+  @include desktop {
+    margin-right: 123px;
+    padding: 14px;
+
+    &:not(:last-child) {
+      margin-right: 139px;
+    }
+  }
+}
+
+.customer__text {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}
+
+.feedback-mark {
+  @extend .list;
+  display: flex;
+  gap: 4px;
+  margin-bottom: 28px;
+}
+
+.customer-info {
+  @include nokia {
+    display: flex;
+  }
+
+  @include mobile {
+    display: flex;
+  }
+}
+
+.customer-profile {
+  display: flex;
+  flex-direction: column;
+
+  & {
+    border-right: 0.854167px solid $secondary-accent-color;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__name {
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}

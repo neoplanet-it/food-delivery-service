@@ -1,0 +1,272 @@
+@media screen and (max-width: 767px) {
+    .hero {
+        &__text-wraper {
+            padding: 60px 0 50px 0;
+        }
+
+        &__header {
+            margin-bottom: 28px;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.18;
+            color: $text-color;
+        }
+
+        &__text {
+            margin-bottom: 28px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+        }
+
+        &__button {
+            min-width: 98px;
+            height: 32px;
+            color: $text-color;
+            background-color: $primary-accent-color;
+            border: none;
+            border-radius: 30px;
+            padding: 6px 18px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__button:active {
+            background-color: $button-hover-color;
+        }
+
+        &__slider-wrapper {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        position: relative;
+        display: flex;
+        min-width: 0;
+        margin-bottom: -40px;
+
+        &__text-wraper {
+            padding: 60px 0 0 0;
+        }
+
+        &__header {
+            width: 540px;
+            margin-bottom: 44px;
+            font-size: 42px;
+            line-height: 120%;
+        }
+
+        &__text {
+            margin-bottom: 40px;
+            width: 335px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $text-color;
+        }
+
+        &__button {
+            min-width: 98px;
+            height: 32px;
+            color: $text-color;
+            background-color: $primary-accent-color;
+            border: none;
+            border-radius: 30px;
+            padding: 6px 18px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__button:active {
+            background-color: $button-hover-color;
+        }
+
+        &__slider-wrapper {
+            position: absolute;
+            display: flex;
+            width: 336px;
+            top: 144px;
+            right: 42px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__slider .slick-arrow {
+            position: absolute;
+            top: 50%;
+            margin: -20px 0 0 0;
+            padding: 0;
+            z-index: 1;
+            font-size: 0;
+            width: 34px;
+            height: 28px;
+            border: transparent;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__slider .slick-arrow:active {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        }
+
+        &__slider .slick-arrow.slick-prev {
+            right: -12px;
+            background: url(/src/images/hero/forward-arrow.svg) 50% no-repeat;
+            background-size: 11px 20px;
+            background-color: $modal-form-background;
+        }
+
+        &__slider .slick-arrow.slick-next {
+            left: -12px;
+            background: url(/src/images/hero/back-arrow.svg) 50% no-repeat;
+            background-size: 11px 20px;
+            background-color: $modal-form-background;
+        }
+
+        &__slider img {
+            width: 292px;
+            height: 292px;
+        }
+
+        &__slider__item .slick-slide {
+            border: 14px solid $main-color;
+            border-radius: 50%;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    .slick-track {
+        width: 336px;
+    }
+
+    .slick-list {
+        overflow: hidden;
+        height: 320px;
+        width: 320px;
+        border: 14px solid $main-color;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero {
+        position: static;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 14px;
+        margin-bottom: -150px;
+
+        &__text-wraper {
+            width: 608px;
+            height: auto;
+            padding: 0;
+        }
+
+        &__header {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 150%;
+            margin-bottom: 40px;
+            width: 505px;
+        }
+
+        &__button {
+            min-width: 98px;
+            height: 32px;
+            color: $text-color;
+            background-color: $primary-accent-color;
+            border: none;
+            border-radius: 30px;
+            padding: 6px 18px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__button:hover,
+        &__button:focus {
+            background-color: $button-hover-color;
+        }
+
+        &__slider-wrapper {
+            position: static;
+            width: 608px;
+            height: 580px;
+        }
+
+        &__slider {
+            top: auto;
+            right: 0;
+        }
+
+        &__slider img {
+            width: 528px;
+            height: 528px;
+        }
+
+        &__slider .slick-arrow {
+            position: absolute;
+            margin: -20px 0 0 0;
+            padding: 0;
+            font-size: 0;
+            width: 40px;
+            height: 48px;
+            border: transparent;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__slider .slick-arrow.slick-prev {
+            right: -8px;
+            background: url(/src/images/hero/forward-arrow.svg) 50% no-repeat;
+            background-size: 16px 29px;
+            background-color: $modal-form-background;
+            transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__slider .slick-arrow.slick-prev:hover,
+        &__slider .slick-arrow.slick-prev:focus {
+            background: url(/src/images/hero/forward-arrow-hover.svg) 50% no-repeat;
+            background-size: 16px 29px;
+            background-color: $modal-form-background;
+        }
+
+        &__slider .slick-arrow.slick-next {
+            left: -8px;
+            background: url(/src/images/hero/back-arrow.svg) 50% no-repeat;
+            background-size: 16px 29px;
+            background-color: $modal-form-background;
+            transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__slider .slick-arrow.slick-next:hover,
+        &__slider .slick-arrow.slick-next:focus {
+            background: url(/src/images/hero/back-arrow-hover.svg) 50% no-repeat;
+            background-size: 16px 29px;
+            background-color: $modal-form-background;
+        }
+    }
+
+    .slick-list {
+        overflow: hidden;
+        height: 580px;
+        width: 580px;
+        border: 26px solid $main-color;
+        border-radius: 50%;
+    }
+}

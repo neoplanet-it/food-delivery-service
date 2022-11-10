@@ -1,0 +1,193 @@
+.subscribe {
+  margin-top: -43px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    margin-top: -74px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    margin-top: -66px;
+    padding-bottom: 64px;
+  }
+}
+
+.subscribe__container {
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 65px;
+  }
+}
+
+.subscribe__img {
+  display: block;
+
+  @media screen and(max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 17px;
+  }
+
+  @media screen and(min-width: 768px) and(max-width: 1279px) {
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  @include tablet {
+    margin-left: auto;
+  }
+}
+
+.subscribe__wrap {
+  @media screen and(min-width: 768px) and(max-width: 1279px) {
+    padding-right: 48px;
+  }
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+
+  @include tablet {
+    font-size: 42px;
+  }
+}
+
+.subscribe__desc {
+  margin-bottom: 40px;
+
+  line-height: 1.14;
+
+  @include tablet {
+    margin-bottom: 24px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+
+  @media screen and(max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.subscribe__input {
+  display: block;
+  width: 279px;
+  height: 42px;
+
+  outline: none;
+  padding-left: 11px;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  border: 0.85px solid $main-color;
+  border-radius: 30px;
+  background: $modal-form-background;
+  transition: border 250ms linear;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: $form-text;
+  }
+
+  &:hover,
+  &:focus {
+    border: 0.85px solid $secondary-accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @include tablet {
+    width: 395px;
+    margin-right: 22px;
+  }
+
+  @include desktop {
+    margin-right: 32px;
+  }
+}
+
+.subscribe__input:-webkit-autofill {
+  -webkit-text-fill-color: $text-color;
+  box-shadow: 0 0 0 100px $modal-form-background inset;
+}
+
+.subscribe__form-error {
+  display: none;
+  align-items: center;
+}
+
+.subscribe__input:focus:not(:placeholder-shown) {
+  border: 0.85px solid $secondary-accent-color;
+}
+
+.subscribe__input:invalid:not(:placeholder-shown) {
+  border: 0.85px solid $form-invalid;
+  margin-bottom: 4px;
+}
+
+.subscribe__input:invalid:not(:placeholder-shown) + .subscribe__form-error {
+  display: flex;
+}
+
+.subscribe__warn {
+  margin-right: 4px;
+}
+
+.subscribe__warn-text {
+  font-weight: inherit;
+  font-size: 10px;
+  line-height: 1.5;
+  color: $form-invalid;
+}
+
+.button--subscribe {
+  display: inline-block;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 30px;
+  padding: 11px 22px;
+
+  background-color: $primary-accent-color;
+  color: $text-color;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: inherit;
+  cursor: pointer;
+
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+
+  &:active {
+    @media screen and (max-width: 767px) {
+      background-color: $button-hover-color;
+    }
+  }
+}

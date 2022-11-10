@@ -1,0 +1,44 @@
+<section id="subscribe" class="subscribe">
+  <div class="container subscribe__container">
+    <img
+      class="subscribe__img"
+      srcset="./images/subscribe/banan-mobile-161.png 161w,
+      ./images/subscribe/banan-tablet-281.png 281w,
+      ./images/subscribe/banan-mobile-322.png 322w,
+      ./images/subscribe/banan-desktop-546.png 546w,
+      ./images/subscribe/banan-tablet-562.png 562w,
+      ./images/subscribe/banan-desktop-1092.png 1092w"
+      sizes="(min-width: 1280px) 546px, (min-width: 768px) 281px, 161px"
+      src="./images/subscribe/banan-mobile-161.png"
+      alt="Banana"
+    />
+    <div class="subscribe__wrap">
+      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form class="subscribe__form">
+        <div class="subscribe__wrap">
+          <input
+          class="subscribe__input"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          pattern="^\S+@\S+\.\S+$"
+        />
+        <div class="subscribe__form-error">
+          <svg class="subscribe__warn" viewBox="0 0 32 32"
+          width="12"
+          height="12"
+        >
+        <use href="./images/icons.svg#icon-Frame"></use>
+      </svg>
+        <b class="subscribe__warn-text">Not a valid email address (example@email.com)</b>
+      </div>
+        </div>
+        <button class="button--subscribe" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>

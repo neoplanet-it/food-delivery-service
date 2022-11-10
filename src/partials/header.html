@@ -1,0 +1,68 @@
+<header id="header" class="header container">
+  <a class="header__logo" href="./index.html">
+    <svg width="66" height="52" aria-label="logo">
+      <use class="header__logo-icon" xlink:href="./images/icons.svg#logo"></use>
+    </svg>
+  </a>
+  <nav class="header__nav">
+    <ul class="header__nav-list list">
+      <li class="header__item">
+        <a class="header__link link" href="#hero">Home</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link link" href="#offerings">Offerings</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link link" href="#favorites">Favorites</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link link" href="#customers-say">Customers say</a>
+      </li>
+      <li class="header__item">
+        <a class="header__link link" href="#subscribe">Subscribe</a>
+      </li>
+    </ul>
+  </nav>
+  <button
+    type="button"
+    class="menu-btn js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg width="28" height="28">
+      <use
+        class="menu-btn-icon"
+        xlink:href="./images/icons.svg#menu-mob-btn"
+      ></use>
+    </svg>
+  </button>
+  <button type="button" class="order-btn" data-modal-open>Order Now</button>
+  <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+    <button type="button" class="menu-close-btn js-close-menu">
+      <svg width="24" height="24" aria-label="switch mobile menu">
+        <use class="close-btn" href="./images/icons.svg#close-btn"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu__wrap">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item list">
+          <a class="mobile-menu__link link" href="#hero">Home</a>
+        </li>
+        <li class="mobile-menu__item list">
+          <a class="mobile-menu__link link" href="#offerings">Offerings</a>
+        </li>
+        <li class="mobile-menu__item list">
+          <a class="mobile-menu__link link" href="#favorites">Favorites</a>
+        </li>
+        <li class="mobile-menu__item list">
+          <a class="mobile-menu__link link" href="#customers-say"
+            >Customers say</a
+          >
+        </li>
+        <li class="mobile-menu__item list">
+          <a class="mobile-menu__link link" href="#subscribe">Subscribe</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

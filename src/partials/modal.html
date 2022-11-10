@@ -1,0 +1,59 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-button" data-modal-close>
+       <svg class="close-btn" viewBox="0 0 32 32"
+        width="32px"
+        height="32px"
+      >
+        <use href="./images/icons.svg#close-btn"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Order Form</p>
+    <form class="modal-form">
+      <div class="form-element">
+        <label for="name" class="modal-label">Name</label>
+        <input type="text" id="name" placeholder="Your name" minlength="3" maxlength="25" required>
+        
+      <div class="form-error">
+        <svg class="warn" viewBox="0 0 32 32"
+        width="12px"
+        height="12px"
+      >
+        <use href="./images/icons.svg#icon-Frame"></use>
+      </svg>
+      <b class="warn-text">The name must be between 3 and 25 characters</b>
+
+    </div>
+
+    </div>
+    
+      <div class="form-element">
+        <label for="tel" class="modal-label">Phone number</label>
+        <input type="tel" id="tel" placeholder="+380xxxxxxxxx" pattern="^+380\d{3}\d{2}\d{2}\d{2}$" required>
+        <div class="form-error">
+          <svg class="warn" viewBox="0 0 32 32"
+          width="12px"
+          height="12px"
+        >
+        <use href="./images/icons.svg#icon-Frame"></use>
+      </svg>
+        <b class="warn-text"> This phone must be in the format  +380xxxxxxxxx</b>
+    </div>
+      </div>
+      <div class="form-element">
+        <label for="email" class="modal-label">E-mail</label>
+        <input type="email" id="email" placeholder="example@gmail.com" required>
+        <div class="form-error">
+          <svg class="warn" viewBox="0 0 32 32"
+          width="12px"
+          height="12px"
+        >
+        <use href="./images/icons.svg#icon-Frame"></use>
+      </svg>
+        <b class="warn-text"> Please enter a valid email address</b>
+      </div>
+        <button type="submit" class="submit-btn">Send</button>
+      
+    </form>
+  </div>
+</div>
